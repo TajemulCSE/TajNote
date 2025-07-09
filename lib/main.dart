@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:tajnote/home_activity.dart';
+import 'package:tajnote/screens/home/home.dart';
 
 void main() {
 
@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-return MaterialApp(home: HomeActivity(),
+return MaterialApp(home: Home(),
 
 
 );

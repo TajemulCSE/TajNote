@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class HomeActivity extends StatelessWidget {
-  const HomeActivity({super.key});
+class Home extends StatelessWidget {
+  const Home({super.key});
 
 
   @override
