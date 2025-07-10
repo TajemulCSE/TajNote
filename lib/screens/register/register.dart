@@ -8,13 +8,25 @@ class Register extends StatelessWidget {
   Widget build(BuildContext context) {
 
     return Scaffold(
-      appBar: AppBar(title: Text("Register"),),
+      appBar: AppBar(title: Text("TajNote Register"),),
             body: ListView(
         children: [
           Image.asset(
             "assets/TajNote_Logo.png",
             fit: BoxFit.contain,
             height: 250,
+          ),
+                    Padding(
+            padding: const EdgeInsets.all(20),
+            child: TextFormField(
+              decoration: InputDecoration(
+                hintText: "Enter Full Name",
+                contentPadding: EdgeInsets.all(5),
+                border: OutlineInputBorder(
+                  borderRadius: BorderRadius.all(Radius.circular(10)),
+                ),
+              ),
+            ),
           ),
           Padding(
             padding: const EdgeInsets.all(20),
@@ -40,6 +52,7 @@ class Register extends StatelessWidget {
               ),
             ),
           ),
+          
           Padding(
             padding: const EdgeInsets.all(10),
             child: ElevatedButton(
