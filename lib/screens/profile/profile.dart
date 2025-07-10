@@ -1,14 +1,14 @@
 import 'package:flutter/material.dart';
 
-class AddNote extends StatelessWidget {
-  const AddNote({super.key});
+class Profile extends StatelessWidget {
+  const Profile({super.key});
 
 
   @override
   Widget build(BuildContext context) {
 
     return Scaffold(
-      appBar: AppBar(title: Text("AddNote"),),
+      appBar: AppBar(title: Text("Profile"),),
     );
   }
   

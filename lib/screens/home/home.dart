@@ -7,7 +7,19 @@ class Home extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
    
-    return Scaffold( appBar: AppBar(title: Text("TajNote"),),
+    return Scaffold( appBar: AppBar(title: Text("TajNote"), actions: [IconButton(onPressed: (){
+      Navigator.pushNamed(context, "/profile");
+    }, icon: Icon(Icons.person))],
+    
+    ),
+
+    floatingActionButton: FloatingActionButton(onPressed: (){
+      Navigator.pushNamed(context, "/addnote");
+    },child: Icon(Icons.add),),
+
+    
+
+
 
     );
   }
