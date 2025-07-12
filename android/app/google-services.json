@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "585469558966",
+    "project_id": "tajnote-ecf21",
+    "storage_bucket": "tajnote-ecf21.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:585469558966:android:366c077c308fde748ba617",
+        "android_client_info": {
+          "package_name": "com.example.tajnote"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBu4zR7tLCQodF_ZrNaZKtgZloL_J17CN4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

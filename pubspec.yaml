@@ -29,6 +29,9 @@ environment:
 # versions available, run `flutter pub outdated`.
 dependencies:
   flutter_native_splash: ^2.4.6
+  firebase_core: 
+  firebase_auth: 
+
   flutter:
     sdk: flutter
 
