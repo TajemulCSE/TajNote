@@ -5,6 +5,7 @@ import 'package:tajnote/screens/login/login.dart';
 import 'package:tajnote/screens/note/add_note.dart';
 import 'package:tajnote/screens/profile/profile.dart';
 import 'package:tajnote/screens/register/register.dart';
+import 'package:tajnote/screens/onboarding/onboarding.dart';
 
 void main() async {
     WidgetsFlutterBinding.ensureInitialized();
@@ -18,11 +19,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      initialRoute: "/login",
+      initialRoute: "/onboarding",
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
         appBarTheme: AppBarTheme(backgroundColor: Colors.amberAccent),
+        scaffoldBackgroundColor: Color(0xFFFFFFFF),
       ),
+      
 
       routes: {
         
@@ -30,6 +33,7 @@ class MyApp extends StatelessWidget {
         "/register": (context) => Register(),
         "/addnote": (context) => AddNote(),
         "/profile": (context) => Profile(),
+        "/onboarding":(context)=> Onboarding(),
       },
     );
   }

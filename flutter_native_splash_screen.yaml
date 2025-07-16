@@ -1,12 +1,12 @@
 flutter_native_splash:
   android: true
   ios: true
-  color: "#000000"
+  color: "#FFB347"
   image: "assets/TajNote_Logo.png"
   branding:  "assets/TajNote_Branding.png"
 
   android_12:
-    icon_background_color: "#000000"
+    icon_background_color: "#FFB347"
     image: assets/TajNote_Logo.png
     android_gravity: fill
     branding:  "assets/TajNote_Branding.png"
