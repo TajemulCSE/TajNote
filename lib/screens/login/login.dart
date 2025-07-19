@@ -6,6 +6,7 @@ class Login extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color(0xFFFFFFFF),
       appBar: AppBar(title: Text("TajNote Login")),
 
       body: ListView(
@@ -24,6 +25,7 @@ class Login extends StatelessWidget {
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.all(Radius.circular(10)),
                 ),
+                prefixIcon: Icon(Icons.email, color: Color(0xFFFFB347)),
               ),
             ),
           ),
@@ -36,31 +38,41 @@ class Login extends StatelessWidget {
                 border: OutlineInputBorder(
                   borderRadius: BorderRadius.all(Radius.circular(10)),
                 ),
+                prefixIcon: Icon(Icons.password, color: Color(0xFFFFB347)),
               ),
             ),
           ),
           Padding(
-            padding: const EdgeInsets.all(10),
+            padding: const EdgeInsets.all(30),
             child: ElevatedButton(
               onPressed: () {},
-              style: ButtonStyle(
-                foregroundColor: WidgetStateProperty.all(Colors.amber),
-                backgroundColor: WidgetStatePropertyAll(Colors.blue), 
-              ),
-              child: Text("Login",style: TextStyle(fontSize: 20,fontWeight: FontWeight.bold),),
+            
+              child: Text(
+                "Login",
+                   style: TextStyle(color: Colors.white,fontSize: 18),
+                    ),
+                    style: ElevatedButton.styleFrom(
+                      backgroundColor: Color(0xFFFFFB347),
+                      fixedSize: Size(300, 50),
+                    ),
             ),
           ),
           Column(
             mainAxisAlignment: MainAxisAlignment.end,
             crossAxisAlignment: CrossAxisAlignment.end,
             children: [
-              TextButton(onPressed: (){}, child: Text("Forgot Password?")),
-              TextButton(onPressed: (){
-                Navigator.pushReplacementNamed(context, "/register");
-              }, child: Text("Do not have an account? Register")),
-
+              TextButton(onPressed: () {}, child: Text("Forgot Password?")),
+              TextButton(
+                onPressed: () {
+                  Navigator.pushReplacementNamed(context, "/register");
+                },
+                child: Text(
+                  "Do not have an account? Register",
+                  style: TextStyle(color: Color(0xFFFFB347)),
+                ),
+              ),
             ],
-          )
+          ),
         ],
       ),
     );

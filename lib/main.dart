@@ -22,7 +22,7 @@ class MyApp extends StatelessWidget {
       initialRoute: "/onboarding",
       debugShowCheckedModeBanner: false,
       theme: ThemeData(
-        appBarTheme: AppBarTheme(backgroundColor: Colors.amberAccent),
+        appBarTheme: AppBarTheme(backgroundColor: Color(0xFFFFB347)),
         scaffoldBackgroundColor: Color(0xFFFFFFFF),
       ),
       
